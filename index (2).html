@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Мағжан Жұмабаев — Қазақ поэзиясының жарық жұлдызы</title>
+  <style>
+    *{box-sizing:border-box;transition:all .3s ease;}
+    body {
+      margin:0;
+      min-height:100vh;
+      font-family:"Poppins", Arial, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: radial-gradient(circle at top left, #0d1b2a, #000814);
+      overflow:hidden;
+      color:#e2e8f0;
+    }
+
+    /* Жанды фон толқын */
+    body::before{
+      content:"";
+      position:absolute;
+      width:200%;
+      height:200%;
+      background:conic-gradient(from 180deg at 50% 50%, #00eaff, #0077ff, #00ffbf, #00eaff);
+      animation:spin 10s linear infinite;
+      opacity:0.12;
+      z-index:0;
+    }
+    @keyframes spin{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
+    }
+
+    .sheet {
+      position:relative;
+      z-index:2;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      box-shadow:0 0 30px rgba(0,255,200,0.1);
+      border-radius:20px;
+      backdrop-filter:blur(14px);
+      padding:40px;
+      max-width:860px;
+      width:100%;
+      animation:fadeInUp 1s ease forwards;
+    }
+    @keyframes fadeInUp{
+      from{opacity:0;transform:translateY(40px);}
+      to{opacity:1;transform:translateY(0);}
+    }
+
+    .top{
+      display:flex;
+      gap:24px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .photo{
+      width:150px;
+      height:150px;
+      border-radius:18px;
+      overflow:hidden;
+      flex:0 0 auto;
+      box-shadow:0 0 20px rgba(0,255,255,0.2);
+      transition:transform .5s, box-shadow .5s;
+    }
+    .photo img{
+      width:100%;height:100%;object-fit:cover;display:block;
+    }
+    .photo:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 40px rgba(0,255,255,0.4);
+    }
+
+    h1{
+      margin:0;
+      font-size:30px;
+      background:linear-gradient(90deg,#00eaff,#00ffbf,#00b4ff);
+      background-size:300%;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:glowMove 5s infinite linear;
+    }
+    @keyframes glowMove {
+      0%{background-position:0% 50%;}
+      100%{background-position:100% 50%;}
+    }
+    h2{margin:6px 0 0;font-size:15px;color:#94a3b8;}
+    h3{margin-top:24px;margin-bottom:8px;color:#00ffcc;font-weight:600;}
+    p{line-height:1.7;margin:10px 0;}
+
+    blockquote{
+      margin:20px 0;
+      padding:16px 20px;
+      background:rgba(0,255,255,0.07);
+      border-left:4px solid #00ffc6;
+      border-radius:8px;
+      font-style:italic;
+      box-shadow:inset 0 0 10px rgba(0,255,255,0.1);
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:16px;
+      padding:10px 18px;
+      border-radius:10px;
+      background:linear-gradient(90deg,#00eaff,#00ffbf,#00b4ff);
+      background-size:300% 100%;
+      color:#000814;
+      font-weight:700;
+      text-decoration:none;
+      animation:glowMove 4s infinite linear;
+      box-shadow:0 0 15px rgba(0,255,255,0.2);
+    }
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 0 25px rgba(0,255,255,0.4);
+    }
+
+    footer{
+      margin-top:28px;
+      text-align:center;
+      font-size:13px;
+      color:#8b9cb0;
+    }
+
+    @media(max-width:780px){
+      .top{flex-direction:column;align-items:flex-start;}
+      .photo{width:120px;height:120px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="top">
+      <div class="photo">
+        <img src="https://upload.wikimedia.org/wikipedia/kk/8/81/Magjan.JPG" alt="Мағжан Жұмабаев портреті">
+      </div>
+      <div>
+        <h1>Мағжан Жұмабаев</h1>
+        <h2>Қазақ поэзиясының жарық жұлдызы • Ұстаз • Алаш қайраткері</h2>
+        <p>Мағжан Бекенұлы Жұмабаев (1893–1938) — қазақ әдебиетінің көрнекті өкілі, 
+        педагог және қоғам қайраткері. Оның шығармалары ұлттық рухты, 
+        еркіндік пен адамгершілікті дәріптейді.</p>
+      </div>
+    </div>
+
+    <h3>Өмір жолы</h3>
+    <p>Мағжан қазіргі Солтүстік Қазақстан облысында дүниеге келген. 
+    Бастапқы білімін ауыл молдасынан алған соң, Қызылжар медресесінде, 
+    кейін Уфадағы “Ғалия” медресесінде оқыды. 1917 жылы Омбыдағы мұғалімдер 
+    семинариясын бітіріп, ұстаздық жолын бастады.</p>
+
+    <h3>Шығармашылық</h3>
+    <blockquote>
+      «Мен жастарға сенемін!» —  
+      жас ұрпақтың рухын оятқан мәңгілік үндеу.
+    </blockquote>
+    <p>Ол поэзиясында түркі халықтарының бірлігі, елдің ертеңі, рухани ояну 
+    мен мәдени жаңғыруды жырлады. 1922 жылы жарық көрген “Шолпан” жинағы 
+    — қазақ поэзиясын жаңа белеске көтерген туынды.</p>
+
+    <h3>Мұрасы</h3>
+    <p>Мағжанның есімі бүгінде білім ордаларына, көшелерге, әдеби сыйлықтарға берілген. 
+    Оның мұрасы — еркіндік пен рухтың символы.</p>
+
+    <a class="btn" href="https://kk.wikipedia.org/wiki/%D0%9C%D0%B0%D2%93%D0%B6%D0%B0%D0%BD_%D0%96%D2%B1%D0%BC%D0%B0%D0%B1%D0%B0%D0%B5%D0%B2" target="_blank">Уикипедияда оқу →</a>
+
+    <footer>© Мағжан Жұмабаев туралы ақпарат • Дереккөз: Уикипедия</footer>
+  </div>
+</body>
+</html>
